@@ -38,7 +38,7 @@ donationInput.addEventListener('input', function () {
 
     // Generate UPI URL
     const randomMessage = generateRandomString(100);
-    const url = `upi://pay?pa=9983304556@paytm&pn=Rahul Kumar Prajapat&am=${donationAmount}&cu=INR&tn=${randomMessage}'${donerEmail}''${donerName}'`;
+    const url = `upi://pay?pa=9772539583@ibl&pn=Rahul Kumar Prajapat&am=${donationAmount}&cu=INR&tn=${randomMessage}'${donerEmail}''${donerName}'`;
 
     // Clear and regenerate QR Code
     qrCodeContainer.innerHTML = `

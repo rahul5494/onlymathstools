@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyMaths | Donate</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/">OnlyMaths </a></div>
+        <div class="navbar">
+            <nav id="nav-bar">
+                <a href="index.html"><div class="nav-links">Home</div></a>
+                <a href="2d.html"><div class="nav-links">2D Shapes</div></a>
+                <a href="3d.html"><div class="nav-links">3D Shapes</div></a>
+                <a href="trigonometric.html"><div class="nav-links">Trigonometry</div></a>
+                <a href="donate.html" id="active"><div class="nav-links">Donate</div></a>
+            </nav>
+        </div>
+        <img id="menu-bar" src="icons/menuBar.svg" alt="Icon1">
+    </header>
+    <body2>
+        <div class="container">
+            <form id="donate" method="post">
+                <fieldset>
+                    <label for="Name">Your Name:</label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="Email">Your Email:</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter Your Email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="donationAmount">Donate Us:</label>
+                    <input type="number" id="donationAmount" name="donationAmount" required placeholder="Enter Amount">
+                </fieldset>
+            </form>
+
+            <!-- QR Code Section -->
+            <div id="qrcode">
+                <div class="qr-title">Your QR Code Will Appear Here</div>
+                <div class="qr-placeholder">Please fill out the form to generate a QR code.</div>
+            </div>
+        </div>
+    </body2>
+
+    <script src="qrcode.js"></script>
+    <script src="donate.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

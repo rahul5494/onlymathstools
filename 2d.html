@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyMaths | 2D</title>
+    <link rel="stylesheet" href="2d.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/">OnlyMaths </a></div>
+        <div class="navbar">
+            <nav id="nav-bar">
+                <a href="index.html"><div class="nav-links">Home</div></a>
+                <a href="2d.html" id="active"><div class="nav-links">2D Shapes</div></a>
+                <a href="3d.html"><div class="nav-links">3D Shapes</div></a>
+                <a href="trigonometric.html"><div class="nav-links">Trigonometry</div></a>
+                <a href="donate.html"><div class="nav-links">Donate</div></a>
+            </nav>
+        </div>
+        <img id="menu-bar" src="icons/menuBar.svg" alt="Icon1">
+    </header>
+    <div class="container">
+      <h1>Shape Area and Perimeter Calculator</h1>
+      <div>
+          <label for="shape">Select Shape:</label>
+          <select id="shape" onchange="generateShapeInputs()">
+              <option value="" disabled selected>Select Shape</option>
+              <option value="triangle">Triangle</option>
+              <option value="square">Square</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="rhombus">Rhombus</option>
+              <option value="parallelogram">Parallelogram</option>
+              <option value="polygon">Polygon (3 to 10 sides)</option>
+          </select>
+      </div>
+
+      <div id="shapeInputs">
+          <!-- Dynamic input fields will appear here based on shape selection -->
+      </div>
+
+      <button onclick="calculateArea()">Calculate Area and Perimeter</button>
+
+      <div id="results">
+          <p id="area" class="results"></p>
+          <p id="perimeter" class="results"></p>
+      </div>
+  </div>
+</body>
+<script src="2d.js" defer></script>
+<script src="nav.js"></script>
+</html>

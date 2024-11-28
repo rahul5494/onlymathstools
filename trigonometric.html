@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyMaths | Trigonometry</title>
+</head>
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="trigonometry.css">
+<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+<body>
+    <header>
+        <div class="logo"><a href="/">OnlyMaths </a></div>
+        <div class="navbar">
+            <nav id="nav-bar">
+                <a href="index.html"><div class="nav-links">Home</div></a>
+                <a href="2d.html"><div class="nav-links">2D Shapes</div></a>
+                <a href="3d.html"><div class="nav-links">3D Shapes</div></a>
+                <a href="trigonometric.html" id="active"><div class="nav-links">Trigonometry</div></a>
+                <a href="donate.html"><div class="nav-links">Donate</div></a>
+            </nav>
+        </div>
+        <img id="menu-bar" src="icons/menuBar.svg" alt="Icon1">
+    </header>
+    <body2 class="body2">
+        <div class="container">
+            <h1>Trigonometric Function Calculator</h1>
+            <div>
+                <label for="functionType">Select Trigonometric Function:</label>
+                <select id="functionType" onchange="updateTrigInputs()">
+                    <option value="" disabled selected>Select a function</option>
+                    <optgroup label="Trigonometric Functions">
+                        <option value="sin">Sine (sin)</option>
+                        <option value="cos">Cosine (cos)</option>
+                        <option value="tan">Tangent (tan)</option>
+                        <option value="csc">Cosecant (csc)</option>
+                        <option value="sec">Secant (sec)</option>
+                        <option value="cot">Cotangent (cot)</option>
+                    </optgroup>
+                    <optgroup label="Inverse Trigonometric Functions">
+                        <option value="asin">Arcsine (sin⁻¹)</option>
+                        <option value="acos">Arccosine (cos⁻¹)</option>
+                        <option value="atan">Arctangent (tan⁻¹)</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="inputSection">
+                <!-- Inputs for angle or value will appear dynamically -->
+            </div>
+            <button onclick="calculateTrig()">Calculate</button>
+            <div id="results">
+                <h3>Results:</h3>
+                <p id="output" class="results"></p>
+            </div>
+        </div>
+    </body2>
+</body>
+<script src="nav.js"></script>
+<script src="trigonometry.js"></script>
+</html>
+
+
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyMaths | 3D</title>
+</head>
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="3d.css">
+<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+<body>
+    <header>
+        <div class="logo"><a href="/">OnlyMaths </a></div>
+        <div class="navbar">
+            <nav id="nav-bar">
+                <a href="index.html"><div class="nav-links">Home</div></a>
+                <a href="2d.html"><div class="nav-links">2D Shapes</div></a>
+                <a href="3d.html" id="active"><div class="nav-links">3D Shapes</div></a>
+                <a href="trigonometric.html"><div class="nav-links">Trigonometry</div></a>
+                <a href="donate.html"><div class="nav-links">Donate</div></a>
+            </nav>
+        </div>
+        <img id="menu-bar" src="icons/menuBar.svg" alt="Icon1">
+    </header>
+    <body2 class="body2">
+        <div class="container">
+            <h1>3D Shape Volume, CSA, and TSA Calculator</h1>
+            <select id="shape">
+                <option value="" disabled selected>Select 3d Shape</option>
+                <option value="cube">Cube</option>
+                <option value="sphere">Sphere</option>
+                <option value="cone">Cone</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cuboid">Cuboid</option>
+                <option value="square_pyramid">Square Pyramid</option>
+                <option value="triangular_pyramid">Triangular Pyramid</option>
+                <option value="hemisphere">Hemisphere</option>
+                <option value="torus">Torus</option>
+                <option value="ellipsoid">Ellipsoid</option>
+                <option value="cone_frustum">Cone Frustum</option>
+                <option value="pyramid_frustum">Pyramid Frustum</option>
+                <option value="tetrahedron">Tetrahedron</option>
+                <option value="octahedron">Octahedron</option>
+                <option value="dodecahedron">Dodecahedron</option>
+            </select>
+    
+            <div id="inputFields" class="input-fields"></div>
+    
+            <button onclick="calculate()">Calculate</button>
+    
+            <div id="results" class="results">
+                <p id="volume" class="results"></p>
+                <p id="csa" class="results"></p>
+                <p id="tsa" class="results"></p>
+            </div>
+        </div>
+    
+    </body2>
+    
+</body>
+<script src="nav.js"></script>
+<script src="3d.js"></script>
+</html>

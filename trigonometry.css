@@ -16,7 +16,7 @@ body body2 {
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
-    max-width: 500px;
+    max-width: 60%;
     width: 90%;
     text-align: center;
     transition: all 0.3s ease-in-out;

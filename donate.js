@@ -1,15 +1,16 @@
 // Function to generate a random string for the QR code
 function generateRandomString(n) {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; // Define possible characters
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; // Possible characters
   let result = '';
-  
+
   for (let i = 0; i < n; i++) {
-    const randomIndex = Math.floor(Math.random() * characters.length); // Get a random index
-    result += characters[randomIndex]; // Append the random character
+    const randomIndex = Math.floor(Math.random() * characters.length); // Random index
+    result += characters[randomIndex]; // Add the random character to the result string
   }
 
   return result;
 }
+
 
 // DOM Elements
 const form = document.getElementById('donate');

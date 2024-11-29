@@ -72,16 +72,14 @@ body, html{
         transition: all 0.3s linear;
 
         &:hover{
-            font-weight: bold;
             color: rgb(221, 184, 115);
-            scale: 1.03;
+            scale: 1.0;
         }
     }
 
     #active{
-        font-weight: bold;
         color: rgb(221, 184, 115);
-        scale: 1.03;
+        scale: 1.05;
     }
 }
 

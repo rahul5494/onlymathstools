@@ -48,7 +48,9 @@ function generateShapeInputs() {
     case 'polygon':
       shapeInputsDiv.innerHTML = `
           <label for="sides">Number of Sides (3 to 10):</label>
+          
           <select id="polygonSides" name="polygonSides" onchange="generatePolygonSideInputs()">
+              <option value="" disabled selected>Select 3d Shape</option>
               ${[...Array(8)].map((_, i) => `<option value="${i + 3}">${i + 3} sides</option>`).join('')}
           </select>
           <div id="sideInputs"></div>

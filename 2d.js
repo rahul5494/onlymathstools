@@ -15,12 +15,14 @@ function generateShapeInputs() {
           <input type="number" id="side3" name="side3" placeholder="Enter third side length" required>
       `;
       break;
+
     case 'square':
       shapeInputsDiv.innerHTML = `
           <label for="side">Side:</label>
           <input type="number" id="side" name="side" placeholder="Enter side length" required>
       `;
       break;
+
     case 'rectangle':
       shapeInputsDiv.innerHTML = `
           <label for="length">Length:</label>
@@ -29,6 +31,7 @@ function generateShapeInputs() {
           <input type="number" id="width" name="width" placeholder="Enter width" required>
       `;
       break;
+
     case 'rhombus':
       shapeInputsDiv.innerHTML = `
           <label for="diagonal1">Diagonal 1:</label>
@@ -37,6 +40,7 @@ function generateShapeInputs() {
           <input type="number" id="diagonal2" name="diagonal2" placeholder="Enter second diagonal" required>
       `;
       break;
+
     case 'parallelogram':
       shapeInputsDiv.innerHTML = `
           <label for="base">Base:</label>
@@ -45,12 +49,12 @@ function generateShapeInputs() {
           <input type="number" id="height" name="height" placeholder="Enter height" required>
       `;
       break;
+
     case 'polygon':
       shapeInputsDiv.innerHTML = `
           <label for="sides">Number of Sides (3 to 10):</label>
-          
           <select id="polygonSides" name="polygonSides" onchange="generatePolygonSideInputs()">
-              <option value="" disabled selected>Select 3d Shape</option>
+              <option value="" disabled selected>Select Sides</option>
               ${[...Array(8)].map((_, i) => `<option value="${i + 3}">${i + 3} sides</option>`).join('')}
           </select>
           <div id="sideInputs"></div>

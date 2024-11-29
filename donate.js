@@ -1,6 +1,14 @@
 // Function to generate a random string for the QR code
-function generateRandomString(length) {
-    return Math.random().toString(36).substring(2, 2 + length);
+function generateRandomString(n) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; // Define possible characters
+  let result = '';
+  
+  for (let i = 0; i < n; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length); // Get a random index
+    result += characters[randomIndex]; // Append the random character
+  }
+
+  return result;
 }
 
 // DOM Elements
@@ -37,7 +45,7 @@ donationInput.addEventListener('input', function () {
     }
 
     // Generate UPI URL
-    const randomMessage = generateRandomString(1000);
+    const randomMessage = generateRandomString(100);
     const url = `upi://pay?pa=9772539583@ibl&pn=Rahul Kumar Prajapat&am=${donationAmount}&cu=INR&tn=${randomMessage}'${donerEmail}''${donerName}'`;
 
     // Clear and regenerate QR Code

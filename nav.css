@@ -70,7 +70,7 @@ body, html{
         font-weight: bold;
         text-decoration: none;
         color: white;
-        transition: all 0.3s linear;
+        transition: all 0.1s linear;
         display: block;
 
         &:hover{

@@ -67,13 +67,14 @@ body, html{
 
 
     & a{
+        font-weight: bold;
         text-decoration: none;
         color: white;
         transition: all 0.3s linear;
 
         &:hover{
             color: rgb(221, 184, 115);
-            scale: 1.0;
+            scale: 1.05;
         }
     }
 

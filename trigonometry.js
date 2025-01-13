@@ -11,8 +11,8 @@ function updateTrigInputs() {
         `;
     } else if (['asin', 'acos', 'atan'].includes(functionType)) {
         inputSection.innerHTML = `
-            <label for="value">Enter Value (between -1 and 1):</label>
-            <input type="number" id="value" step="0.01" placeholder="Enter value (-1 to 1)">
+            <label for="value">Enter Valuel: </label>
+            <input type="number" id="value" step="0.01" placeholder="Enter value">
         `;
     }
 }
@@ -70,8 +70,8 @@ function calculateTrig() {
         }
     } else if (['asin', 'acos', 'atan'].includes(functionType)) {
         const value = getInputValue('value');
-        if (value === null || value < -1 || value > 1) {
-            alert('Please enter a value between -1 and 1.');
+        if (value === null) {
+            alert('Please enter some value.');
             return;
         }
 
